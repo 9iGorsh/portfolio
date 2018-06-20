@@ -1,0 +1,33 @@
+.row{
+	
+	&__8--top-v-gap{
+	margin-top:3rem;
+	}
+	
+	@mixin atMedium{
+		&__4{
+			float:left;
+			width:33.33%;
+		}	
+		
+		&__8--top-v-gap{
+		margin-top:0;
+		}
+		
+		&__8{
+			float:left;
+			width:66.66%;
+		}
+	}
+	
+	@mixin clearfix;
+	
+	&--gutters>div{
+		padding-right:60px;
+	}
+	
+	&--gutters{
+		margin-right:-60px;
+	}
+
+}

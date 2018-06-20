@@ -1,0 +1,13 @@
+.headline{
+	font-weight:300;
+	font-size:1.9rem;
+	color:$blue;
+	
+	&--centered{
+		text-align:center;
+	}
+	
+	@mixin atSmall{
+		font-size:2.875rem;
+	}
+}

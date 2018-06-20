@@ -1,0 +1,7 @@
+.generic-content{
+	p{
+		@mixin atSmall{
+			font-size:1.125rem;
+		}
+	}
+}
