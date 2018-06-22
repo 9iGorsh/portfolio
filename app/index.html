@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="flexbox svg">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
@@ -46,10 +46,10 @@
     <div class="wrapper">
     <h2 class="headline headline--centered">A word about me.</h2>
 	  <div class="row row--gutters">
-	    <div class="row__4">
+	    <div class="row__medium-4">
 			<img class="page-section__image" src="assets/images/me.png" alt="That's me">
 		</div>
-		<div class="row__8 row__8--top-v-gap">
+		<div class="row__medium-8 row__medium-8--top-v-gap">
 			<div class="generic-content">
 				<p>Hi, I am Igor. Nice to meet you. Just started as a web developer.</p>
 				<p>I am at the beginning of the web developement journey.</p>
@@ -60,35 +60,56 @@
 	</div>
   </div>
 
-  <div id="skills">
-    <img src="assets/images/icons/star.svg">
-    <h2>Skills I Possess</h2>
-
-    <img src="assets/images/icons/fire.svg">
-    <h3>Dev Tools</h3>
+  <div id="skills" class="page-section--skills">
+   <div class="wrapper wrapper--skill">
     
-    <ul>
-		<li>Git</li>
-		<li>Node.js NPM</li>
-		<li>Gulp</li>
-		<li>PostCSS</li>
-		<li>Babel</li>
-	</ul>
-
-    <img src="assets/images/icons/globe.svg">
-    <h3>Languages</h3>
-    
-    <ul>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>JavaScript</li>
-	</ul>
+    <h2 class="section-title section-title--blue"><img class="section-title__icon" src="assets/images/icons/star.svg">Skills I Possess</h2>
 	
-	<img src="assets/images/icons/wifi.svg">
-    <h3>Working On</h3>
-   
-    <p>JavaScript improving</p>
-
+	<div class="row row--gutters row--t-padding row--equal-height-at-medium">
+		<div class="row__medium-4">
+			<div class="skill">
+				<div class="skill__photo">
+					<img src="assets/images/icons/fire.svg">
+				</div>
+					<h3 class="skill__title">Dev Tools</h3>
+					
+					<ul>
+						<li>Git</li>
+						<li>Node.js NPM</li>
+						<li>Gulp</li>
+						<li>PostCSS</li>
+						<li>Babel</li>
+					</ul>
+			</div>		
+		</div>
+		<div class="row__medium-4">
+			<div class="skill">
+				<div class="skill__photo">
+					<img src="assets/images/icons/globe.svg">
+				</div>
+					<h3 class="skill__title">Languages</h3>
+					
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+					</ul>
+			</div>	
+		</div>
+		<div class="row__medium-4">
+			<div class="skill skill__last">
+				<div class="skill__photo">
+					<img src="assets/images/icons/wifi.svg">
+				</div>
+				<h3 class="skill__title">Working On</h3>
+			   
+				<p>JavaScript improving</p>
+			</div>
+		</div>
+		
+	</div>
+	</div>
   </div>
 
   <footer>

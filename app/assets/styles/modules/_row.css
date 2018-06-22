@@ -1,20 +1,20 @@
 .row{
-	
+
 	&__8--top-v-gap{
 	margin-top:3rem;
 	}
 	
-	@mixin atMedium{
-		&__4{
+	@mixin atSmall{
+		&__medium-4{
 			float:left;
 			width:33.33%;
 		}	
 		
-		&__8--top-v-gap{
+		&__medium-8--top-v-gap{
 		margin-top:0;
 		}
 		
-		&__8{
+		&__medium-8{
 			float:left;
 			width:66.66%;
 		}
@@ -23,11 +23,31 @@
 	@mixin clearfix;
 	
 	&--gutters>div{
-		padding-right:60px;
+		padding-right:40px;
 	}
 	
 	&--gutters{
-		margin-right:-60px;
+		margin-right:-40px;
+	}
+	
+	&--t-padding{
+		padding-top:50px;
+		
+		@mixin atSmall{
+			padding-top:20px;
+		}
+	}	
+
+	.flexbox &--equal-height-at-medium{
+		@mixin atSmall{
+			display:flex;
+			align-items:stretch;
+		
+		& > div{
+			float:none;
+			display:flex;
+			}
+		}
 	}
 
 }
