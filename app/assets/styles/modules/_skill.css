@@ -24,7 +24,7 @@
 		top:-50px;
 	}
 	
-	&__photo>img{
+	&__photo--img{
 		display:block;
 		position:absolute;
 		top:50%;
