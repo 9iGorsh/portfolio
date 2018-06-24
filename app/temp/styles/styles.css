@@ -1143,3 +1143,17 @@ Instead edit gulp/templates/sprite. */
 		float:right
 	}
 	}
+
+.reveal-item{
+	opacity:0;
+	-webkit-transition:all 1.5s ease-out;
+	transition:all 1.5s ease-out;
+	-webkit-transform:scale(1.2);
+	        transform:scale(1.2);
+}
+
+.reveal-item--is-visible{
+		opacity:1;
+		-webkit-transform:scale(1);
+		        transform:scale(1);
+	}
