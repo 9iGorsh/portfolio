@@ -1,9 +1,18 @@
 .btn{
-	background-color:$blue;
+	background-color:$orange;
 	color:#fff;
 	text-decoration:none;
 	padding:.75rem 1.2rem;
 	display:inline-block;
+	
+	&--nav{
+		display:none;
+		
+		@mixin atMedium{
+		background-color:$blue;
+		display:inline-block;
+		}	
+	}
 	
 	&--orange{
 		background-color:$orange;
