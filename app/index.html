@@ -24,15 +24,15 @@
 		</div>
 		<nav class="primary-nav primary-nav--pull-rite">
 		  <ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#About-me">About me</a></li>
+			<li><a href="#home" id="home-link">Home</a></li>
+			<li><a href="#About-me" id="about-link">About me</a></li>
 		  </ul>
 		</nav>
 	</div>
    </div>
   </header>
 
-  <div class="large-hero">  
+  <div class="large-hero scroll-link" data-match="#home-link">  
 	<picture>
 	   <source srcset="assets/images/large-unsplash.jpg 1920w, assets/images/large-unsplash-hi-dpi.jpg 3840w" media="(min-width:1380px)">
 
@@ -54,7 +54,7 @@
 	  </div>
   </div>
 
-  <div id="intro" class="page-section">
+  <div id="intro" class="page-section scroll-link" data-match="#about-link">
     <div class="wrapper">
     <h2 class="headline headline--centered">A word about me.</h2>
 	  <div class="row row--gutters">

@@ -97,6 +97,7 @@
 	
 	@mixin atMedium{
 		background-color:rgba($blue,.5);
+		position:fixed;
 	}
 	
 	&__logo{

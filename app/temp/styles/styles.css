@@ -1043,7 +1043,8 @@ Instead edit gulp/templates/sprite. */
 @media(min-width:800px){
 
 .site-header{
-		background-color: rgba(47,85,114,.5)
+		background-color: rgba(47,85,114,.5);
+		position:fixed
 }
 	}
 
@@ -1135,6 +1136,10 @@ Instead edit gulp/templates/sprite. */
 			font-size:1rem;
 			background-color:transparent
 	}
+			
+			.primary-nav a.is-current-link{
+				color:#c1876b;
+			}
 	}
 
 @media(min-width:800px){
