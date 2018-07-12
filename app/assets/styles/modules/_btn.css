@@ -23,7 +23,13 @@
 		
 		@mixin atSmall{
 		font-size:1.25rem;
-		}
+		}		
+	}
+	
+	&--round{
+		border:1px solid $blue;
+		background-color:#fff;
+		color:$blue;
 	}
 	
 }

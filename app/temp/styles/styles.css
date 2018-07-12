@@ -575,14 +575,20 @@ img{
 	}
 
 .btn--large{	
-		padding:1.1rem 1.9rem;
+		padding:1.1rem 1.9rem;		
 	}
 
 @media(min-width:530px){
 
 .btn--large{
-		font-size:1.25rem
+		font-size:1.25rem		
 	}
+	}
+
+.btn--round{
+		border:1px solid #2f5572;
+		background-color:#fff;
+		color:#2f5572;
 	}
 
 .wrapper{
@@ -605,6 +611,10 @@ img{
 			padding-left:88px;
 			padding-right:88px
 	}
+	}
+
+.wrapper--narrow{
+		max-width:700px;
 	}
 
 .page-section{
@@ -631,7 +641,7 @@ img{
 @media(min-width:530px){
 
 .page-section--skills{
-			background:url('/assets/images/skills-bg-1.jpg') top center no-repeat;
+			background:url('/assets/images/andyone-63924-unsplash.jpg') top center no-repeat;
 			background-size:cover
 	}
 	}
@@ -657,11 +667,52 @@ img{
 	margin-top:3rem;
 	}
 
+.row__medium-4--input{			
+		width:100%;
+		padding:5px;
+		font-size:1.4rem;
+		font-weight:200;
+		border:1px solid #2f5572;
+	}
+
+.row__medium-4--mod>label>h3{
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+
+.row__medium-8--mod{
+			width:100%;					
+		}
+
+.row__medium-8--mod>label>h3{
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+
+.row__medium-8--btn{
+			text-align:center;
+			font-size:1.4rem;
+			font-weight:200;
+			margin-top:.5rem;
+		}
+
+.row__textarea{
+		width:100%;	
+		font-size:1.4rem;
+		font-weight:200;
+		padding:5px;
+		border:1px solid #2f5572;
+	}
+
 @media(min-width:530px){
 		.row__medium-4{
 			float:left;
 			width:33.33%;
-		}	
+		}
+			
+		.row__medium-4__medium-4--mod{
+			width:100%;
+			}
 		
 		.row__medium-8--top-v-gap{
 		margin-top:0;
@@ -670,6 +721,23 @@ img{
 		.row__medium-8{
 			float:left;
 			width:66.66%;
+		}
+			
+			.row__medium-8--mod{
+			width:100%;
+			}
+	}
+
+@media(min-width:460px){
+		.row__medium-4--mod{
+			float:left;
+			width:50%;
+		}
+	}
+
+@media(min-width:800px){
+		.row__medium-8--mod{
+			margin:2rem 0 2rem 0;
 		}
 	}
 
@@ -725,22 +793,17 @@ img{
 	}
 
 .section-title{
-	font-size:2.55rem;
+	font-size:2.0rem;
 	font-weight:300;
 	text-align:center;
-	/*	
-	&--less-margin{
-		margin-bottom:1.3rem;
-		margin-top:0;
-	}
 	
-	*/
 }
 
-@media(min-width:530px){
+@media(min-width:800px){
 
 .section-title{
 		font-size:3.75rem
+	
 }
 	}
 
@@ -759,7 +822,7 @@ img{
 	margin-bottom:0.6rem;
 	}
 
-@media(min-width:530px){
+@media(min-width:460px){
 
 .section-title__icon{
 		position:relative;
@@ -769,6 +832,11 @@ img{
 		display:inline-block;
 		margin-bottom:0
 	}
+	}
+
+.section-title--less-margin{
+		margin-bottom:0;
+		margin-top:0;
 	}
 
 .skill{
@@ -1162,3 +1230,58 @@ Instead edit gulp/templates/sprite. */
 		-webkit-transform:scale(1);
 		        transform:scale(1);
 	}
+
+.modal, .modal-2{
+	position:fixed;
+	z-index:5;
+	background-color:rgba(255,255,255,.94);
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transform:scale(1.2);
+	        transform:scale(1.2);
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+}
+
+.modal--is-visible,.modal-2--is-visible{
+		opacity:1;
+		visibility:visible;
+		-webkit-transform:scale(1);
+		        transform:scale(1);		
+	}
+
+.modal__description,.modal-2__description{
+		text-align:center;
+		font-size:1.3rem;
+		font-weight:300;
+		line-height:1.65;
+	}
+
+.modal__inner,.modal-2__inner{
+		position:absolute;
+		top:50%;
+		width:100%;
+		-webkit-transform:translateY(-50%);
+		        transform:translateY(-50%);
+	}
+
+.modal__close,.modal-2__close{
+		position:absolute;
+		top:15px;
+		right:15px;
+		font-size:2rem;
+		-webkit-transform:scaleX(1.2);
+		        transform:scaleX(1.2);
+		-webkit-transform-origin:100% 0;
+		        transform-origin:100% 0;
+		color:#2f5572;
+		cursor:pointer;
+	}
+
+.modal__close:hover,.modal-2__close:hover{
+			color:#c1876b;
+		}

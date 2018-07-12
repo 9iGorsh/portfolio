@@ -2,11 +2,20 @@
   "name": "portfolio",
   "version": "1.0.0",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "consolidate": "^0.15.1",
+    "ejs": "^2.6.1",
+    "express": "^3.20.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
     "jquery": "3.2.1",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.1",
+    "nodemailer": "^0.7.1",
+    "nodemailer-sendgrid": "^1.0.3",
     "normalize.css": "7.0.0",
     "picturefill": "3.0.2",
+    "validator": "^10.4.0",
     "waypoints": "4.0.1"
   },
   "devDependencies": {

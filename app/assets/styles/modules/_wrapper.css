@@ -15,4 +15,8 @@
 			padding-right:88px;
 		}
 	}
+	
+	&--narrow{
+		max-width:700px;
+	}
 }
