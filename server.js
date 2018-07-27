@@ -39,11 +39,11 @@ app.post('/', function(req, res){
 	//Create reusable transporter object using the default SMTP transport
 
 var transporter = nodemailer.createTransport('SMTP',{
-    service: 'SendGrid',
+    service: 'Mail.ru',
 
 	 auth: {
-      user: 'igorsh',
-      pass: '!Ufkz63##'
+      user: 'mail-19-mail@mail.ru',
+      pass: 'start/90/*'
     },
 		tls:{
 		rejectUnauthorized:false
@@ -52,7 +52,7 @@ var transporter = nodemailer.createTransport('SMTP',{
  
 	//Setup email data with unicode symbols
   var mailOptions = {
-	from: 'igorelsh19@gmail',
+	from: 'mail-19-mail@mail.ru',
     to: '3www-mail@mail.ru',
     subject: 'New message from contact form',
 	html:output
@@ -70,5 +70,5 @@ var transporter = nodemailer.createTransport('SMTP',{
   });
 });
 
-app.listen(process.env.PORT);
-//app.listen(3000, function(){console.log('Server started..');});
+//app.listen(process.env.PORT);
+app.listen(3000, function(){console.log('Server started..');});
