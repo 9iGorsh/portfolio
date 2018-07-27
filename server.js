@@ -49,7 +49,7 @@ var transporter = nodemailer.createTransport('SMTP',{
     },
 //		tls:{
 //		rejectUnauthorized:false
-	}
+//	}
   });
  
 	//Setup email data with unicode symbols
