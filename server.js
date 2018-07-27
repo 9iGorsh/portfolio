@@ -13,7 +13,7 @@ var app = express();
 //app.engine('html', cons.hbs);
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
-app.set('views', 'app');
+app.set('views', 'docs');
 
 //Static folder
 
