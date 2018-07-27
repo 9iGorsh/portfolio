@@ -70,5 +70,5 @@ var transporter = nodemailer.createTransport('SMTP',{
   });
 });
 
-//app.listen(process.env.PORT);
-app.listen(3000, function(){console.log('Server started..');});
+app.listen(process.env.PORT);
+//app.listen(3000, function(){console.log('Server started..');});
