@@ -39,11 +39,11 @@ app.post('/', function(req, res){
 	//Create reusable transporter object using the default SMTP transport
 
 var transporter = nodemailer.createTransport('SMTP',{
-    service: 'SendGrid',
+    service: '',
 
 	 auth: {
-      user: 'igorsh',
-      pass: '!Ufkz63##'
+      user: '',
+      pass: ''
     },
 		tls:{
 		rejectUnauthorized:false
@@ -52,8 +52,8 @@ var transporter = nodemailer.createTransport('SMTP',{
  
 	//Setup email data with unicode symbols
   var mailOptions = {
-	from: 'igorelsh19@gmail',
-    to: '3www-mail@mail.ru',
+	from: '',
+    to: '',
     subject: 'New message from contact form',
 	html:output
   };
