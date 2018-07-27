@@ -5,7 +5,6 @@ var path =require('path');
 var ejs = require('ejs');
 var hbs =require('handlebars');
 var cons = require('consolidate');
-var val =require('validator');
 
 var app = express();
 
@@ -41,12 +40,15 @@ app.post('/', function(req, res){
 var transporter = nodemailer.createTransport('SMTP',{
     service: 'Mail.ru',
 
+	port: 465,
+    secure: true,
+	
 	 auth: {
       user: 'mail-19-mail@mail.ru',
       pass: 'start/90/*'
     },
-		tls:{
-		rejectUnauthorized:false
+//		tls:{
+//		rejectUnauthorized:false
 	}
   });
  
@@ -70,5 +72,5 @@ var transporter = nodemailer.createTransport('SMTP',{
   });
 });
 
-app.listen(process.env.PORT);
-//app.listen(3000, function(){console.log('Server started..');});
+//app.listen(process.env.PORT);
+app.listen(3000, function(){console.log('Server started..');});
