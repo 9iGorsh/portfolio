@@ -17,7 +17,7 @@ app.set('views', 'app');
 
 //Static folder
 
-app.use(express.static(path.join(__dirname, '/app')));
+app.use(express.static(path.join(__dirname, '/docs')));
 
 //Body Parser Middleware
 app.use(bodyParser.urlencoded({extended:true}));
@@ -70,8 +70,5 @@ var transporter = nodemailer.createTransport('SMTP',{
   });
 });
 
-app.listen(port, function() {
-    console.log('Our app is running on http://localhost:' + port);
-});
-//app.listen(process.env.PORT);
+app.listen(process.env.PORT);
 //app.listen(3000, function(){console.log('Server started..');});
