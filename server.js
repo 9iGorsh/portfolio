@@ -45,7 +45,7 @@ var transporter = nodemailer.createTransport('SMTP',{
 	
 	 auth: {
       user: 'mail-19-mail@mail.ru',
-      pass: 'start/90/*'
+      pass: 'start/90/**'
     },
 //		tls:{
 //		rejectUnauthorized:false
