@@ -8,7 +8,7 @@
     "express": "^3.20.3",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.1",
     "nodemailer": "^0.7.1",
