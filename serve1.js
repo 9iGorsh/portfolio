@@ -1,4 +1,4 @@
-var express =require('express');
+﻿var express =require('express');
 var bodyParser =require('body-parser');
 var nodemailer =require('nodemailer');
 var path =require('path');
@@ -6,7 +6,6 @@ var ejs = require('ejs');
 var hbs =require('handlebars');
 var cons = require('consolidate');
 var val =require('validator');
-var nodemailerSendgrid = require('nodemailer-sendgrid');
 
 var app = express();
 
@@ -14,11 +13,11 @@ var app = express();
 //app.engine('html', cons.hbs);
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
-app.set('views', 'app');
+app.set('views', 'docs');
 
 //Static folder
 
-app.use(express.static(path.join(__dirname, '/app')));
+app.use(express.static(path.join(__dirname, '/docs')));
 
 //Body Parser Middleware
 app.use(bodyParser.urlencoded({extended:true}));
@@ -38,25 +37,19 @@ app.post('/', function(req, res){
 	`;
 	
 	//Create reusable transporter object using the default SMTP transport
-var transport = nodemailer.createTransport(  //sendgrid
-    nodemailerSendgrid({
-        apiKey: process.env.SENDGRID_API_KEY
-    })
-);	
 
+var transporter = nodemailer.createTransport('SMTP',{
+    service: 'SendGrid',
 
-/*				var transporter = nodemailer.createTransport("SMTP",{
-					service: "SendGrid",
-
-					 auth: {
-					  user: 'igorsh',
-					  pass: '!Ufkz63##'
-					},
-						tls:{
-						rejectUnauthorized:false
-					}
-				  });
- */
+	 auth: {
+      user: 'igorsh',
+      pass: '!Ufkz63##'
+    },
+		tls:{
+		rejectUnauthorized:false
+	}
+  });
+ 
 	//Setup email data with unicode symbols
   var mailOptions = {
 	from: 'igorelsh19@gmail',
