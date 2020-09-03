@@ -18,7 +18,7 @@
     "handlebars": "^4.7.6",
     "jquery": "^3.5.1",
     "jquery-smooth-scroll": "2.2.0",
-    "lazysizes": "4.0.1",
+    "lazysizes": "5.2.1",
     "nodemailer": "^0.7.1",
     "nodemailer-sendgrid": "^1.0.3",
     "normalize.css": "7.0.0",
